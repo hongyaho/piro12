@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        *{overflow: hidden;}
+
+        a {
+            text-decoration:none;
+            color: grey;
+           }
+
+        #left_space {
+            background-color: #1da1f2;
+            width: 50%;
+            height: 100%;
+            float: left;
+            font-weight:bold; font-size:35px; color: white;
+            padding: 350px 0
+        }
+
+        #left_space div {
+            width: 50%;
+            margin: 100px 400px;
+        }
+
+        #right_space {
+            width: 50%;
+            height: 100%;
+            float: right;
+        }
+
+        #header {
+            margin: 70px 25px 170px 25px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        input {
+            font-size: 27px;
+            padding : 25px;
+            background-color: white;
+        }
+
+        input:focus{
+            border:1px solid #1da1f2;
+            padding : 25px;
+            box-sizing: content-box;
+        }
+
+        input.button {
+            color: #1da1f2; border: 2px solid #1da1f2;;
+            border-radius: 45px 45px;
+            font-weight:bold;
+        }
+
+        #content1  {
+            width: 47%;
+            margin: 0 auto;
+        }
+
+        #content1 .login {
+            font-weight:bold; font-size:20px;
+            text-align: right;
+            color: #1da1f2; border: 2px solid #1da1f2;;
+            border-radius: 30px 30px;
+            padding: 20px;
+            float: right;
+        }
+
+         #content1 div {
+                    text-align: left;
+                    font-weight:bold; font-size:55px;
+                }
+
+         #content2 {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+
+        #content2 div:nth-child(1) {
+            text-align: left;
+            font-weight:bold; font-size:35px;
+            padding: 80px 0 30px 0 ;
+        }
+
+         #content2 .signup {
+            display: block;
+            margin-bottom: 16px;
+            background-color: #1da1f2;
+            color:white;
+            padding: 10px 40px;
+            border-radius: 60px 60px;
+            font-size: 30px;
+             text-align: center;
+             box-sizing: content-box;
+        }
+
+        #content2 .login {
+            display: block;
+            margin-bottom: 16px;
+            background-color: white;
+            color:#1da1f2; border:2px solid #1da1f2;
+            padding: 10px 40px;
+            border-radius: 60px 60px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #nav ul li {
+            list-style:none;
+            float: left;
+            color: grey;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div id="left_space">
+        <div>관심사를 팔로우하세요.</div>
+        <div>사람들이 이야기하고 있는 주제에 대해 알아보세요.</div>
+        <div>대화에 참여하세요.</div>
+    </div>
+
+    <div id="right_space">
+        <div id="header">
+            <form>
+                <input type="text" name="uname" placeholder="휴대폰 번호, 이메일 주소 또는"/>
+                <input type="password" name="upw" placeholder="비밀번호"/>
+               <input class="button" type="submit" value="로그인" /><br/>
+                <a href ="https://twitter.com/account/begin_password_reset" target="_blank">비밀번호 찾기</a>
+            </form>
+        </div>
+        <div id="content1">
+            <span class="img"><img src="Twitter_Logo_Blue.png" alt="로고" width="150"></span>
+            <a class="login" href =https://twitter.com/login>로그인</a>
+            <div>지금 세계 곳곳에서 무슨 일이 일어나고 있는지 확인하세요.</div>
+        </div>
+
+        <div id ="content2">
+            <div>지금 트위터에 가입하세요.</div>
+            <a class="signup" href ="https://twitter.com/i/flow/signup">가입하기</a><br/>
+            <a class="login" href ="https://twitter.com/login?lang=ko">로그인</a>
+        </div>
+
+    </div>
+
+    <div id="nav">  <!--맨밑-->
+        <ul>
+            <li>회사소개</li>
+            <li>고객센터</li>
+            <li>블로그</li>
+            <li>시스템 현황</li>
+            <li>인재채용</li>
+            <li>이용약관</li>
+            <li>개인정보 처리방침</li>
+            <li>쿠키</li>
+            <li>광고 정보</li>
+            <li>브랜드</li>
+            <li>애플리케이션</li>
+            <li>광고</li>
+            <li>마케팅</li>
+            <li>비즈니스</li>
+            <li>개발자</li>
+            <li>디렉토리리/li>
+            <li>설정</li>
+        </ul>
+    </div>
+
+</body>
+</html>
