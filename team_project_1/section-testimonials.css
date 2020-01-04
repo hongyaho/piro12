@@ -1,0 +1,70 @@
+#testimonials {
+    padding: 60px 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+#testimonials .container {
+    padding:0 15px;
+    margin:0 10%;
+    color:#444444;
+}
+#testimonials .header > h3 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align:center;
+    color: #413e66;
+    margin: 0 0 20px;
+}
+#testimonials .content-texts {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#testimonials .content img {
+    width:15%;
+    margin: 30px 10px;
+    border-radius: 100px;
+    float:left;
+    display: inline;
+}
+#testimonials .content .content-texts-wrapper {
+    float:right;
+    width: 80%;
+    margin:0 0 15px 10px;
+}
+#testimonials .content-texts-wrapper > h3 {
+    color:#111111;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+#testimonials .content-texts-wrapper > h4 {
+    color:#999999;
+    font-size: 14px;
+    margin:0 0 5px;
+}
+#testimonials .content-texts-wrapper > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color:#444444;
+    width:80%;
+    margin:0 0 5px;
+}
+#testimonials .content-dots {
+    margin: 5px auto 0;
+    text-align: center;
+    overflow: hidden;
+}
+#testimonials .dots-wrapper {
+    margin:0 40%;
+}
+#testimonials .content-dots .dot {
+    width:12px;
+    height: 12px;
+    background-color: #DDDDDD;
+    border-radius: 100%;
+    float:left;
+    margin:0 5px;
+}
+#testimonials .content-dots .dot:first-child {
+    background-color: #1bb1dc;
+}
