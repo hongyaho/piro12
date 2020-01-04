@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+         @import url("section-callAction.css");
+
+         #header{
+          height:110px;
+          padding: 20px 0;
+          position:fixed;
+          left: 0;
+          top: 0;
+          right: 0;
+          z-index:998;
+          margin:0 100px 0 100px;
+    }
+    #topbar{
+          padding:0 0 10px 0;
+    }
+    #social_links{
+          text-align:right;
+    }
+    .scroll {
+          text-decoration:none;
+          color:rebeccapurple;
+    }
+    nav {
+          overflow:hidden;
+    }
+    .div  {
+          text-decoration:none;
+          text-align:center;
+          display:inline-block;
+          float:left;
+          width:10%;
+          margin-left:50px;
+    }
+    .wrap {
+          width:100%;
+          padding-right:15px;
+          padding-left:15px;
+          margin-left:auto;
+          margin-right:auto;
+    }
+    #services {
+          background-color: #f5f8fd;
+    }
+    .services_header h2 {
+          text-align:center;
+          position: relative;
+    }
+    .services_header p {
+          text-align: center;
+          margin: auto;
+          padding-bottom:60px;
+          width:50%;
+    }
+    .row {
+          display:flex;
+          flex-wrap:wrap;
+          margin-left:50px;
+          margin-right:50px;
+    }
+    .bounce {
+          position:relative;
+          width: 26%;
+          float: left;
+          padding-right:15px;
+          padding-left:15px;
+          margin:0 auto;
+    }
+    .box {
+          padding:30px;
+          position:relative;
+          overflow:hidden;
+          border-radius: 10px;
+          margin: 0 10px 40px 10px;
+          background:white;
+    }
+    .box >h3 {
+          text-align:center;
+    }
+    .box > .icon {
+          width:60px;
+          height:60px;
+          border-radius:50%;
+          background-color: pink;
+    }
+    .icon {margin-left:36%;}
+    .title a {
+          text-decoration:none;
+          color:black;
+    }
+    .volu{
+          overflow:hidden;
+          margin:0 auto;
+          width:80%;
+    }
+    .girl {
+          width: 50%;
+          float:left;
+          visibility:visible;
+          animation-name: fadeInUP;
+          padding-left:15px;
+          padding-right:15px;
+    }
+    .smartphone {
+          width: 50%;
+          float:left;
+          padding-left:15px;
+          padding-right:15px;
+    }
+    .neque {
+          width: 50%;
+          float: left;
+          padding-left:15px;
+          padding-right:15px;
+    }
+    .volup{
+          width:50%;
+          float:left;
+          padding-left:15px;
+          padding-right:15px;
+    }
+    .pooka{
+          max-width:100%;
+          height:auto;
+    }
+    .low {
+          overflow:hidden;
+          margin:10px auto;
+          width:80%;
+    }
+    .iphone{
+          max-width:100%;
+          height:auto;
+    }
+    .volu < div {
+              display:inline-block;
+            }
+    #footer .copy {
+          text-align:center;
+          padding-top:30px;
+          font-size:15px;
+    }
+    #footer .design{
+          text-align:center;
+          padding-top:4px;
+    }
+    .back_to_top{
+          position:fixed;
+          display:inline;
+          background: deepskyblue;
+          color: white;
+          width:44px;
+          height:44px;
+          text-align:center;
+          line-height:1;
+          border-radius:50%;
+          z-index:991;
+          right: 15px;
+          bottom: 15px;
+          font-size:2.0em;
+          text-decoration: none;
+          line-height:2;
+    }
+
+
+        #intro {
+            width:100%; height: 100vh;
+            position:relative;
+            padding: 0 40px;
+            background-color: #f5f8fd;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .content1  {
+            padding :  400px 380px ;
+        }
+
+        .content1 .left {
+            width : 50%;
+            float:left;
+            padding-left: 280px;
+
+        }
+
+        .p1 { font-size: 5em;}
+
+        span {color: #1bb1dc;}
+
+        .content1 .left a {
+            text-decoration: none;
+            border: 1px solid #1bb1dc;
+            background-color: #1bb1dc;
+            color: white;
+            border-radius: 10px 10px ;
+            padding : 20px 80px ;
+            font-weight: bold;
+            font-size: 1.3em;
+
+        }
+
+         .content1 .right {
+             float:left;
+             padding-top: 100px;
+         }
+
+        #about {
+            width: 100%;
+            padding : 150px 200px;
+        }
+
+        .content2 {overflow: hidden;
+        }
+
+
+        .us_img div {
+            width:200px;height:870px;
+        }
+        .content2 .us_img {
+            float :left;
+            padding-left: 420px;
+            padding-right: 50px;
+            position: relative;
+        }
+
+        .content2 .us_img img {
+            border: 10px solid #ffffff;
+        }
+
+         .content2 .us_img:hover {
+             transform:scale(1.03);
+             transition: .5s;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+
+        .content2 .right {
+            width:50%;
+            float:left;
+        }
+
+        .content2 .right, h1 { font-size: 2em;}
+
+        .content2 p {font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;}
+
+        .content2 p:nth-child(2){font-style: italic; font-size: 1em;}
+
+
+
+        *{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+#call-to-action {
+    background: #2d2b46;
+    background-size: cover;
+    padding: 40px 0;
+    width:100%
+}
+#call-to-action a { text-decoration: none; color:#ffffff; }
+#call-to-action .container {
+    width:100%;
+    padding-right:15px;
+    padding-left: 15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+#call-to-action .container .row {
+    padding: 0 200px;
+    color : #ffffff;
+    overflow: hidden;
+}
+#call-to-action .container .text-center {
+    float:left;
+    width:70%;
+}
+#call-to-action .row h3 {
+    font-size:28px;
+    margin:0 0 20px;
+    font-weight: bold;
+}
+#call-to-action .row p {
+    font-size: 16px;
+    margin:0 0 30px;
+    line-height: 1.5;
+}
+#call-to-action .row .btn-center {
+    float:left;
+    margin:45px 20px;
+}
+#call-to-action .row .btn {
+    padding:0px 15px;
+}
+#call-to-action .row a {
+    padding:8px 26px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border:3px solid #ffffff;
+    border-radius: 3px;
+    transition: 0.5s;
+    display:inline-block;
+}
+#call-to-action .row a:hover{
+    background-color: #1bb1dc;
+    border-color: #1bb1dc;
+    cursor: pointer;
+}
+
+         #portfolio {
+            width:100%; height: 100vh;
+            position:relative;
+            padding: 0 40px;
+            background-color: #f5f8fd;
+            box-sizing: border-box;
+
+        }
+
+        .header h1 {
+            font-size: 3.8em;
+            color: #413e66;
+            text-align: center;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .category {
+            position: relative;
+            width: 100%;
+            }
+
+        .category ul {
+            list-style:none;
+            text-align: center;
+        }
+
+        .category ul li {
+            margin: 15px 15px 15px 0;
+            display: inline-block;
+            padding: 6px 10px;
+            font-size: 25px;
+            line-height: 20px;
+            color: #413e66;
+            margin-bottom: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .category ul li:hover {
+            color : #1bb1dc;
+            cursor: pointer;
+        }
+
+
+        .port {
+            position: relative;
+            height: 1081.03px;
+            padding : 100px 580px;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+        .port div:nth-child(1) {
+            margin-bottom: 100px;
+            padding:0 30px;
+        }
+
+        .port_img1 {
+            position: absolute;
+            overflow: hidden;
+        }
+
+
+        .port_img2 {
+            position: absolute;
+            left:1150px;
+        }
+
+        .port_img3 {
+            position: absolute;
+            left:2500px;
+
+        }
+
+        .port_img3 {
+            position: absolute;
+            overflow: hidden;
+            left: 1200px;
+        }
+
+        .port_img4 {
+            position: absolute;
+            overflow: hidden;
+            top:800px;
+            left : 1800px
+        }
+
+        .port_img5 {
+            position: absolute;
+            overflow: hidden;
+            left:1200px;
+            top:900px;
+        }
+
+        .port_img6 {
+            position: absolute;
+            overflow: hidden;
+            top:800px;
+        }
+        .port_img7 {
+            position: absolute;
+            overflow: hidden;
+            top:1700px;
+        }
+
+        .port_img8 {
+            position: absolute;
+            overflow: hidden;
+            top:1700px;
+            left:1400px;
+        }
+
+        .port_img9 {
+            position: absolute;
+            overflow: hidden;
+            left:1800px;
+            top:1300px;
+        }
+
+
+        .port div:nth-child(2){
+             overflow: hidden;
+            position: relative;
+            display: inline-block;
+            float:left;
+        }
+
+        .port img:hover
+         {animation: event4Hover 0.5s linear 1; opacity: 0.2;}
+
+
+
+    </style>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!--p1-->
+    <section id="intro">
+       <div class="content1">
+           <div class="left">
+               <h2 class="p1">Rapid Solutions
+                   <br>for Your
+                   <span>Business!</span>
+               </h2>
+               <a class="get started" href="#about us">GET STARTED</a>
+           </div>
+
+           <div class="right">
+               <img src="https://bootstrapmade.com/demo/themes/Rapid/img/intro-img.svg" width="800px" >
+           </div>
+       </div>
+    </section>
+
+    <section id="about">
+        <div class="content2">
+
+            <div class="us_img" id="about us">
+                <!--
+                <div class="box1"></div>
+                <div class="box2"></div>-->
+                <img src="https://bootstrapmade.com/demo/themes/Rapid/img/about-img.jpg" width="580px">
+            </div>
+
+            <div class="right">
+                <h2>About Us</h2>
+                <p>Odio ser id</p>
+                <p>Lorem ipsum im the best modu saeha bok mani bada yo ol hae nen nae ge son e namu siryo suzoknangzeng i hate it</p>
+                <p>Aut dolor id djwjrn na e olhae kyeahuak el han ben zuk a boget sse yo</p>
+                <p> chet bun zzae il zzik mili zunbi hae se yeou ropgae hak gyo gagi</p>
+                <p> undong yeolsim hi hagi why nei meon na nen cheryuk guzi geingang choi ko</p>
+                <p> hak zum bokgu ha gi zue bun hakgi gong pu nemu an hasse hak zum i maldo andsaie zini us gaa kum iao</p>
+            </div>
+        </div>
+    </section>
+
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <h3 class="cta-title">Call To Action</h3>
+                <p class="cta-text">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            </div>
+            <div class="btn-center">
+                <a href="#">Call To Action</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<header id="header">
+  <div id="topbar">
+    <div id="wrap">
+      <div id="social_links">
+        <a href="" class="twitter">t</a>
+        <a href="" class="facebook">f</a>
+        <a href="" class="linkedin">l</a>
+        <a href="" class="instagram">i</a>
+      </div>
+    </div>
+  </div>
+  <div class="contain">
+    <div>
+      <h1>
+        <a href="#" class="scroll">
+          <span>RAPID</span>
+        </a>
+      </h1>
+    </div>
+
+    <nav>
+      <div class="div"><a href="">Home</a></div>
+      <div class="div"><a href="">About Us</a></div>
+      <div class="div"><a href="#services">Services</a></div>
+      <div class="div"><a href="">PORTFOLIO</a></div>
+      <div class="div"><a href=""></a>TEAM</div>
+      <div class="div"><a href=""></a>DROP DOWN</div>
+      <div class="div"><a href=""></a>CONTACT US</div>
+
+    </nav>
+
+  </div>
+
+
+
+
+
+</header>
+
+
+
+<section id="services">
+  <div class="wrap">
+    <header class="services_header">
+      <h2>Services</h2>
+      <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+    </header>
+    <div class="row">
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Lorem Ipsum</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Dolor Sitema</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Sed ut perspiciatis</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Magni Dolores</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Nemo Enim</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+      <div class="bounce">
+        <div class="box">
+          <div class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAADj4+OPj483Nzfu7u76+vr39/fExMQ0NDTY2Nje3t4qKioYGBhubm6urq68vLx1dXWdnZ2VlZVRUVE+Pj4lJSWIiIhKSkpoaGjQ0NCCgoJgYGAvLy+0tLRYWFgNDQ0eHh5NxlUvAAACbElEQVRoge2Y23arIBBAlYoa4yXmVq+x/v9PVhsGJRFoeoCe1TX7MbJmZwYYQc9DEARBEARBEARBEOS/JSJJkuypcy+N2+GSjll2Daq8IKE7c1x++AJd4ch+CPwNjg6KT/It80QQ21bfJOaZNrJpDt8V6il1m3WX1duBXFR/VHWZD6nwW2ZLflpJ+rah0bSxIkqO1er3ys6cxyuFuKPiy/Lk3YY6WuLnT8kVS7M5WHC/LUlvPG1GeHo1r95z9W37+VX11/4NvsZPkgEJT9z0WicZizxI3xpHdWF+Dg9M5GPOsM8MuwcWt1WMaaDBJEbVIaStChtBkzG7zaCvXJSjYGJyo26IKlvkd2Cp90bdJYvaqIfBzBh1w+7eq4elNtz1Peao2GEzsNiMdpeOtSyN+2zDzfLONDWHd6nRlzjMt6ZrQOM1qfZaFlRzDrayzgsWtFSO+l4HehV4e6sPBnCCfjPqDuFMpGrVFLa34RsKNLZOMQYmJtXsxFc5+NrE6ciG1GbVXtizwDtpUjX8PU3Tfx1+MThLBkDFLVwPKL91d5ux+aHK9Eqb4Xn53XO7Dhd1al69vCimW+Djgks6f0F9vvgZpF/iV/GSe5iUvoDZ1nJnfRn0q/Y2v9RofOr8R6zLVdgou+pry9/OnD7PrrvMwyLblpXJxbrco8cNezmdpoj4wdFG2afcD/luJRkH9vmF7gS5lcwnSFOU56DfVfUp3vMr+UPmtuTbUBdll0EcLDi5XJxzG1+85IgLrnDqFsqeGT426uXBb6XtrcruXs0zd7vFgK99/htZz5C61NzVEQRBEARBEARBEAT5+3wCxFIVE6n7UysAAAAASUVORK5CYII=" height="50px">
+          </div>
+          <h3 class="title"><a href>Eiusmod Tempor</a></h3>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+            sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+ <section id="features">
+   <div class="wrap">
+     <div class="volu">
+       <div class="girl">
+         <img src="https://bootstrapmade.com/demo/themes/Rapid/img/features-1.svg" class="pooka" alt="PooKa">
+       </div>
+      <div class="volup">
+        <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+        <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis
+          occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.</p>
+        <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt
+          veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.</p>
+      </div>
+     </div>
+    <div class="low">
+      <div class="neque">
+        <h2>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h2>
+        <p>Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo
+          qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae
+          incidunt sunt.</p>
+        <p>Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias.
+          Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.</p>
+        <p>Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi.
+          Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.</p>
+      </div>
+      <div class="smartphone">
+        <img src="https://bootstrapmade.com/demo/themes/Rapid/img/features-2.svg" class="iphone" alt="smartphone">
+      </div>
+    </div>
+   </div>
+ </section>
+
+
+
+<footer id="footer">
+  <div class="wrap">
+    <div class="copy">
+      &copy; Copyright Rapid. All Rights Reserved
+    </div>
+    <div class="design">Designed by
+      <a href="https://bootstrapmade.com">Bootstrapmade</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#"  class="back_to_top">^</a>
+
+ <section id="portfolio">
+        <div class="content3">
+            <div class="content_header">
+                <header class="header">
+                    <h1 class="header_title">Our Portfolio</h1>
+                </header>
+
+                <div class="category">
+                    <ul>
+                        <li>All</li>
+                        <li>App</li>
+                        <li>Card</li>
+                        <li>Web</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content_port">
+                <div class="port">
+                    <div class="port_img1">
+                        <div class="img1">
+                            <img src="ggetip.jpg" width="500px" height="650px" class="ggetip">
+                        </div>
+                    </div>
+
+                    <div class="port_img2">
+                        <div class="img2">
+                            <img src="bhdraw1.jpg" width="550px" height="400px" class="bhdraw1">
+                        </div>
+                    </div>
+
+                    <div class="port_img3">
+                        <div class="img3">
+                            <img src="bhdraw2.jpg" width="500px" height="700px" class="bhdraw2">
+                        </div>
+                    </div>
+
+                    <div class="port_img4">
+                        <div class="img4">
+                            <img src="daechu.jpg" width="450px" height="450px" class="daechu">
+                        </div>
+                    </div>
+
+                    <div class="port_img5">
+                        <div class="img5">
+                            <img src="kong1.jpg" width="550px" height="750px" class="kong1">
+                        </div>
+                    </div>
+
+                    <div class="port_img6">
+                        <div class="img6">
+                            <img src="kong2.jpg" width="550px" height="800px" class="kong2">
+                        </div>
+                    </div>7
+
+                    <div class="port_img7">
+                        <div class="img7">
+                            <img src="4thgrade.jpg" width="700px" height="400px" class="4grade">
+                        </div>
+                    </div>
+
+
+                    <div class="port_img8">
+                        <div class="img8">
+                            <img src="bokbada.jpg" width="350px" height="400px" class="bokbada">
+                        </div>
+                    </div>
+
+
+                    <div class="port_img9">
+                        <div class="img9">
+                            <img src="ddong.jpg" width="550px" height="800px" class="ddong">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>
